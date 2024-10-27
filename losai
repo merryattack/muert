@@ -43,3 +43,7 @@ end
 if universeid == 5836869368 then 
     loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
 end
+
+if universeid == 6401952734 then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/isonaism/sadsd/refs/heads/main/stop", true))()
+end
