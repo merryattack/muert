@@ -1,49 +1,54 @@
-repeat
-    task.wait()
-until game.GameId ~= nil
-repeat
-    task.wait()
-until game:IsLoaded()
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-if getgenv().loaded then
-    return
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.3, 0, 0.4, 0)
+frame.Position = UDim2.new(0.35, 0, 0.3, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Parent = screenGui
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0.2, 0)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+title.Text = "Your executor is outdated!"
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Font = Enum.Font.GothamBlack
+title.TextSize = 24
+title.Parent = frame
+
+local downloadButton = Instance.new("TextButton")
+downloadButton.Size = UDim2.new(0.8, 0, 0.15, 0)
+downloadButton.Position = UDim2.new(0.1, 0, 0.4, 0)
+downloadButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
+downloadButton.Text = "Click to get download link!"
+downloadButton.TextColor3 = Color3.new(1, 1, 1)
+downloadButton.Font = Enum.Font.GothamBlack
+downloadButton.TextSize = 18
+downloadButton.Parent = frame
+
+local pcOnlyLabel = Instance.new("TextLabel")
+pcOnlyLabel.Size = UDim2.new(0.8, 0, 0.1, 0)
+pcOnlyLabel.Position = UDim2.new(0.1, 0, 0.6, 0)
+pcOnlyLabel.BackgroundTransparency = 1
+pcOnlyLabel.Text = "PC only version!"
+pcOnlyLabel.TextColor3 = Color3.new(1, 1, 1)
+pcOnlyLabel.Font = Enum.Font.GothamBold
+pcOnlyLabel.TextSize = 16
+pcOnlyLabel.Parent = frame
+
+local thankYouLabel = Instance.new("TextLabel")
+thankYouLabel.Size = UDim2.new(0.8, 0, 0.1, 0)
+thankYouLabel.Position = UDim2.new(0.1, 0, 0.75, 0)
+thankYouLabel.BackgroundTransparency = 1
+thankYouLabel.Text = "Thank you for use!"
+thankYouLabel.TextColor3 = Color3.fromRGB(180, 180, 180) -- темнее
+thankYouLabel.Font = Enum.Font.Gotham
+thankYouLabel.TextSize = 14 -- чуть меньше
+thankYouLabel.Parent = frame
+
+local function setClipboardWithURL()
+    setclipboard("https://ify.ac/1QMu")
 end
-getgenv().loaded = true
 
-universeid = game.GameId
-
-if universeid == 383310974 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 3317771874 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 4778845442 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 66654135 then
-    loadstring(game:HttpGet("https://darkscripts.space/scripts/cd9b0b7249.lua", true))()
-end
-
-if universeid == 2316994223 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 1008451066 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 4777817887 then
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 5836869368 then 
-    loadstring(game:HttpGet("https://egorikusa.space/3b533f65c5a3f4c80fd2a7ef.lua", true))()
-end
-
-if universeid == 6401952734 then 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/isonaism/sadsd/refs/heads/main/stop", true))()
-end
+downloadButton.MouseButton1Click:Connect(setClipboardWithURL)
