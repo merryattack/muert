@@ -48,7 +48,7 @@ thankYouLabel.TextSize = 14 -- чуть меньше
 thankYouLabel.Parent = frame
 
 local function setClipboardWithURL()
-    setclipboard("https://ify.ac/1QMu")
+    setclipboard("https://ify.ac/1QRq")
 end
 
 downloadButton.MouseButton1Click:Connect(setClipboardWithURL)
